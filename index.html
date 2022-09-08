@@ -12,8 +12,8 @@
 		<script src="https://kit.fontawesome.com/f65fe5b8a6.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="container">
-			<nav class="navbar navbar-expand-lg bg-light">
+    <header class="container" id="home">
+			<nav class="navbar sticky-top navbar-expand-lg bg-light">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">SkillTech</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,13 +22,13 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link active" aria-current="page" href="#home">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Courses</a>
+								<a class="nav-link" href="#course">Courses</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link disabled">FAQ</a>
+								<a class="nav-link" href="#faq">FAQ</a>
 							</li>
 						</ul>
 						<form class="d-flex" role="search">
@@ -37,38 +37,40 @@
 					</div>
 				</div>
 			</nav>
-			<div id="carouselExampleCaptions" class="carousel  slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active text-light" data-bs-interval="3000">
-						<img src="images/cover/cover-1.png" class="d-block w-100" alt="...">
-						<div class="carousel-caption d-flex h-100 align-items-center justify-content-center flex-column ">
-							<h5 class="fs-1 fw-bold lh-lg ">Lets Start to Grow up the Skills</h5>
-							<p>Here We are to help you to build up your career with different type of skills</p>
-							<button type="button" class="btn btn-primary">Get Started</button>
+			<section class="mt-2">
+				<div id="carouselExampleCaptions" class="carousel  slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active text-light" data-bs-interval="3000">
+							<img src="images/cover/cover-1.png" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-flex h-100 align-items-center justify-content-center flex-column">
+								<h5 class="fs-1 fw-bold">Lets Start to Grow up the Skills</h5>
+								<p>Here We are to help you to build up your career with different type of skills</p>
+								<button type="button" class="btn btn-primary">Get Started</button>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="2000">
+							<img src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-flex h-100 align-items-center justify-content-center flex-column">
+								<h5 class="fs-1 fw-bold lh-lg">Level up Your SKILLS with your CAREER</h5>
+								<p>Take the responsibility for your career and scratch your opportunities</p>
+								<button type="button" class="btn btn-primary">Get Started</button>
+							</div>
 						</div>
 					</div>
-					<div class="carousel-item" data-bs-interval="2000">
-						<img src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
-						<div class="carousel-caption d-flex h-100 align-items-center justify-content-center flex-column">
-							<h5 class="fs-1 fw-bold lh-lg">Level up Your SKILLS with your CAREER</h5>
-							<p>Take the responsibility for your career and scratch your opportunities</p>
-							<button type="button" class="btn btn-primary">Get Started</button>
-						</div>
-					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
+			</section>
 		</header>
 		<main class="container">
 			<!-- course  -->
-			<section class="p-5">
+			<section class="p-5" id="course">
 				<h1 class="fs-1 fw-bold lh-lg text-center">Choose Your Dream Courses From Here</h1>
 				<p class="text-center">These all courses are for the long term relationship with you and your skills that will help you to improve  your skills much better</p>
 				<div class="row g-4">
@@ -139,7 +141,7 @@
 				</div>
 			</section>
 			<!-- FAQ -->
-			<section class="p-5">
+			<section class="p-5" id="faq">
 				<h1 class="fs-1 fw-bold lh-lg text-center">You Questions and Answers</h1>
 				<p class="text-center">We are here to take care about You In different way and for different purposes</p>
 				<div class="accordion" id="accordionPanelsStayOpenExample">
